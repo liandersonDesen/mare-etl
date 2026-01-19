@@ -145,18 +145,40 @@ Ou lista detalhada de divergências (data, hora ou altura).
 
 ---
 
-## 📐 Estrutura do JSON
+## 📄 Exemplo real de extração (PDF → JSON)
+
+Abaixo está um exemplo **real** de conversão automática a partir do PDF oficial da DHN (Tábua de Marés – Terminal Portuário do Pecém).
+
+### 📕 Trecho do PDF oficial (Janeiro)
+
+![Exemplo PDF](./docs/exemplo-pdf-janeiro.png)
+
+### 📦 JSON gerado automaticamente
 
 ```json
-{
-  "data": "2026-01-01",
-  "dados": [
-    { "hora": "02:38", "altura": 2.62 },
-    { "hora": "08:36", "altura": 0.48 },
-    { "hora": "14:57", "altura": 2.89 },
-    { "hora": "21:19", "altura": 0.16 }
-  ]
-}
+[
+  {
+    "data": "2025-01-01",
+    "dados": [
+      { "hora": "05:40", "altura": 2.55 },
+      { "hora": "11:36", "altura": 0.53 },
+      { "hora": "17:51", "altura": 2.88 }
+    ]
+  },
+  {
+    "data": "2025-01-02",
+    "dados": [
+      { "hora": "00:06", "altura": 0.26 },
+      { "hora": "06:19", "altura": 2.55 },
+      { "hora": "12:17", "altura": 0.52 },
+      { "hora": "18:32", "altura": 2.87 }
+    ]
+  },
+  .
+  .
+  .
+  .
+]
 ```
 
 ---
