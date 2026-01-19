@@ -132,7 +132,7 @@ mares/2026/mare-pecem-2026.json
 Compara o JSON anual oficial com outro arquivo (ex: extração alternativa).
 
 ```bash
-node scripts/validar-mare.js 2026 amigo/mare-pecem-2026.json
+npm run estrutura 2026 amigo/mare-pecem-2026.json
 ```
 
 Saída esperada:
