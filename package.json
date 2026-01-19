@@ -1,0 +1,32 @@
+{
+  "name": "mare-etl",
+  "version": "1.0.0",
+  "description": "Pipeline ETL em Node.js para extração, normalização e validação de tábuas de marés oficiais (PDF → JSON), organizado por ano.",
+  "type": "module",
+  "main": "scripts/extrair-mare.js",
+  "scripts": {
+    "extrair": "node scripts/extrair-mare.js",
+    "juntar": "node scripts/juntar-mare.js",
+    "validar": "node scripts/validar-mare.js",
+    "estrutura": "node scripts/criar-estrutura-do-ano.js"
+  },
+  "keywords": [
+    "mares",
+    "tabua-de-mares",
+    "etl",
+    "pdf",
+    "json",
+    "nodejs",
+    "oceanografia",
+    "dhn",
+    "porto"
+  ],
+  "author": "liandersonDesen <liandersonr18@gmail.com>",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "pdf-parse": "^1.1.1"
+  }
+}
